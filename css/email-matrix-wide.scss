@@ -26,9 +26,11 @@ $red: #f25c05;
 	font-family: "Quicksand", sans-serif;
 }
 
-.matrix {
-	// to adjust horizontal size of matrix, change width percentage
+section {
 	width: 85%;
+}
+
+.matrix {
 	padding: 20px;
 	background-color: #fff;
 }

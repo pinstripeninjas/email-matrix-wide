@@ -6,8 +6,11 @@
   font-family: "Quicksand", sans-serif;
 }
 
-.matrix {
+section {
   width: 85%;
+}
+
+.matrix {
   padding: 20px;
   background-color: #fff;
 }
