@@ -6,6 +6,7 @@ const urlCriteria = "https://api.jsonbin.io/b/5ea872ac4c87c3359a634763";
 const matrix = document.querySelector(".matrix");
 const matrixHeader = document.querySelector(".matrix-header");
 const matrixContent = document.querySelector(".matrix-content");
+const issued = document.querySelector("#issued");
 
 // Run everything
 getDataForMatrix();
@@ -28,10 +29,7 @@ function getDataForMatrix() {
 				buildHeader(forecast, criteria);
 				// create matrix contnent
 				buildMatrixContent(forecast, criteria);
-				// remove loader and display matrix
-				// loader.classList.toggle("display-none");
-				// loader.classList.toggle("loader");
-				// matrix.classList.toggle("display-none");
+				setIssuedDate();
 			})
 		)
 		.catch((err) => {
@@ -127,4 +125,11 @@ function applyColor(value, field, criteria, j) {
 			return "green";
 		}
 	}
+}
+
+function setIssuedDate() {
+	const date = new Date();
+	issued.innerText = `Issued: ${
+		date.getMonth() + 1
+	}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} MST`;
 }
