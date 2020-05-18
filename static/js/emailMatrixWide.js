@@ -29,7 +29,7 @@ function getDataForMatrix() {
 				buildHeader(forecast, criteria);
 				// create matrix contnent
 				buildMatrixContent(forecast, criteria);
-				setIssuedDate();
+				//setIssuedDate();
 			})
 		)
 		.catch((err) => {
@@ -127,6 +127,7 @@ function applyColor(value, field, criteria, j) {
 	}
 }
 
+// sets issued time based on CPU clock
 function setIssuedDate() {
 	const date = new Date();
 	issued.innerText = `Issued: ${
