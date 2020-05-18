@@ -154,8 +154,9 @@ p {
 }
 
 #issued {
+  position: absolute;
   text-align: left;
-  padding: 15px;
+  margin-left: 15px;
   font-style: italic;
 }
 /*# sourceMappingURL=email-matrix-wide.css.map */
