@@ -16,8 +16,8 @@ $red: #f25c05;
 }
 
 @mixin matrixBorder {
-	border-bottom: 1px solid #fff;
-	border-right: 1px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
 }
 
 * {
@@ -88,6 +88,7 @@ p {
 }
 
 .matrix-row {
+	height: 45px;
 	@include flexCenter();
 	div:nth-child(8) {
 		margin-right: 2%;
@@ -100,29 +101,29 @@ p {
 		margin-right: 2%;
 	}
 	.field-name {
-		border-top: 1px solid $light-gray;
+		border-top: 2px solid $light-gray;
 	}
 }
 
 .criteria-item {
 	width: 13%;
-	height: 42px;
-	line-height: 42px;
-	text-align: center;
+	height: 100%;
+	@include flexCenter();
 }
 
 .field-name {
-	width: 20%;
 	font-weight: 700;
-	padding: 10px 0;
-	border-bottom: 1px solid $light-gray;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid $light-gray;
 }
 
 .forecast-item {
 	width: 7%;
-	height: 42px;
-	line-height: 42px;
-	text-align: center;
+	height: 100%;
+	@include flexCenter();
 }
 
 // color classes for matrix //////////////////////////////
@@ -140,13 +141,6 @@ p {
 	background-color: $red;
 	@include matrixBorder();
 	color: #fff;
-}
-
-#issued {
-	position: absolute;
-	text-align: left;
-	margin-left: 15px;
-	font-style: italic;
 }
 
 // Footer /////////////////////////

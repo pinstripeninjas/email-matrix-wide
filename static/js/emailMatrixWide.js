@@ -1,5 +1,5 @@
-// API requests
-const urlForecast = "https://api.jsonbin.io/b/5ea86eb34c87c3359a634594";
+// API requests (test json link) https://api.jsonbin.io/b/5ea86eb34c87c3359a634594
+const urlForecast = "http://128.196.125.36/matrix/?get_data_aviation";
 const urlCriteria = "https://api.jsonbin.io/b/5ea872ac4c87c3359a634763";
 
 // Document Selectors
